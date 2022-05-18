@@ -69,8 +69,8 @@
           </ul>
 
           <form class="card p-2">
+            <label for="promo-code" class="form-label">Promo code</label>
             <div class="input-group">
-              <label for="promo-code" class="form-label">Promo code</label>
               <input type="text" class="form-control" id="promo-code">
               <button type="submit" class="btn btn-secondary">Redeem</button>
             </div>
@@ -161,6 +161,8 @@
 
             <hr class="my-4">
 
+            <fieldset>
+              <legend>I am interested in the following (check all that apply):</legend>
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="same-address">
               <label class="form-check-label" for="same-address">Shipping address is the same as my billing
@@ -171,11 +173,14 @@
               <input type="checkbox" class="form-check-input" id="save-info">
               <label class="form-check-label" for="save-info">Save this information for next time</label>
             </div>
+          </fieldset>
 
             <hr class="my-4">
 
             <h4 class="mb-3">Payment</h4>
 
+            <fieldset>
+              <legend>Choose your preferred form of payment:</legend>
             <div class="my-3">
               <div class="form-check">
                 <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
@@ -190,6 +195,7 @@
                 <label class="form-check-label" for="paypal">PayPal</label>
               </div>
             </div>
+          </fieldset>
 
             <div class="row gy-3">
               <div class="col-md-6">
